@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/css/core.css">
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <link rel="stylesheet" href="./assets/styles/css/home.css">
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <header class="header">
+        <div class="f-row-between container">
+            <a class="default-logo f-row">
+                <div class="default-logo__img">
+                    <img src="./assets/images/icons/Logo.svg" alt="">
+                </div>
+                <span class="default-logo__text">
+                    CAR<span class="text-accent">/</span>REPAIR X
+                </span>
+            </a>
+            <nav class="header__nav f-row" data-menu="nav">
+                <a href="" class="header__link f-row">
+                    HOME
+                </a>
+                <a href="" class="header__link">
+                    ABOUT
+                </a>
+                <a href="" class="header__link">
+                    BLOG
+                </a>
+                <button class="header__link f-row">
+                    PAGES
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 8.5L12 15.5L19 8.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="header__link f-row">
+                    CART (3)
+                </button>
+                <button class="header__link btn--primary">
+                    GET STARTED
+                </button>
+            </nav>
+            <button class="header__burger-btn f-column-between" 
+                data-menu-btn="nav" data-menu-no-overlay>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="home">
+        <!-- "Hero" section -->
+        <section class="hero">
+            <div class="hero__overlay clip-overlay">
+                <img class="hero__bg" src="./assets/images/hero.png" alt="">
+                <div class="hero__shadow">
+                    <div class="hero__shadow--short"></div>
+                    <div class="hero__shadow--short"></div>
+                    <div class="hero__shadow--short"></div>
+                    <div class="hero__shadow--short"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero__content heading f-column">
+                    <div class="hero__label heading__label">
+                        Car repair
+                    </div>
+                    <h1 class="hero__title heading__title">
+                        Auto maintenance, service & repair
+                    </h1>
+                    <p class="hero__subtitle">
+                        At vitae commodo amet libero tortor blandit risus condimentum
+                        mauris. cras arcu tortor aenean turpis massa mauris ac mi facilisi.
+                    </p>
+                    <div class="hero__cta cta">
+                        <button class="btn--primary">
+                            Schelude an appointment
+                        </button>
+                        <button class="btn--secondary">
+                            Browse services
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Services" section -->
+        <section class="services">
+            <div class="container f-column">
+                <div class="services__header f-row-between">
+                    <div class="services__heading heading">
+                        <span class="services__label heading__label">
+                            Services
+                        </span>
+                        <h2 class="services__title heading__title">
+                            We offer a wide range of car services
+                        </h2>
+                    </div>
+                    <div class="services__cta cta">
+                        <button class="btn--primary">
+                            Schelude an appointment
+                        </button>
+                        <button class="btn--secondary btn--dark">
+                            Browse services
+                        </button>
+                    </div>
+                </div>
+                <div class="services__slider slider" data-slider="services">
+                    <div class="services__cards slider__track" data-slider-el="track">
+
+                        <article class="s-card slider__slide">
+                            <img class="s-card__bg" src="./assets/images/services/service-1.png" alt="">
+                            <div class="s-card__content f-column-between">
+                                <div class="s-card__top">
+                                    <span class="s-card__number">
+                                        01
+                                    </span>
+                                </div>
+                                <div class="s-card__bottom f-column">
+                                    <h3 class="s-card__title">
+                                        Maintenance
+                                    </h3>
+                                    <div class="s-card__subttitle">
+                                        Lacus malesuada consequat sed duis nunc tellus
+                                        tincidunt tellus viverra fermentum vitae sit
+                                        ac risus pellentesque id morbi rhoncus
+                                        eu duis.
+                                    </div>
+                                    <button class="s-card__more btn--secondary">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="s-card slider__slide">
+                            <img class="s-card__bg" src="./assets/images/services/service-2.png" alt="">
+                            <div class="s-card__content f-column-between">
+                                <div class="s-card__top">
+                                    <span class="s-card__number">
+                                        02
+                                    </span>
+                                </div>
+                                <div class="s-card__bottom f-column">
+                                    <h3 class="s-card__title">
+                                        Wheels
+                                    </h3>
+                                    <div class="s-card__subttitle">
+                                        Lacus malesuada consequat sed duis nunc tellus
+                                        tincidunt tellus viverra fermentum vitae sit
+                                        ac risus pellentesque id morbi rhoncus
+                                        eu duis.
+                                    </div>
+                                    <button class="s-card__more btn--secondary">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="s-card slider__slide">
+                            <img class="s-card__bg" src="./assets/images/services/service-2.png" alt="">
+                            <div class="s-card__content f-column-between">
+                                <div class="s-card__top">
+                                    <span class="s-card__number">
+                                        03
+                                    </span>
+                                </div>
+                                <div class="s-card__bottom f-column">
+                                    <h3 class="s-card__title">
+                                        Tires
+                                    </h3>
+                                    <div class="s-card__subttitle">
+                                        Lacus malesuada consequat sed duis nunc tellus
+                                        tincidunt tellus viverra fermentum vitae sit
+                                        ac risus pellentesque id morbi rhoncus
+                                        eu duis.
+                                    </div>
+                                    <button class="s-card__more btn--secondary">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                    <div class="services__control slider__control f-row-between" data-slider-el="control">
+                        <button class="services__btn" data-slider-btn="prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.4609 3.53914L3.00007 12L11.4609 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                                <path d="M3.00009 12L21 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                            </svg>
+                        </button>
+                        <button class="services__btn" data-slider-btn="next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5391 3.53914L20.9999 12L12.5391 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                                <path d="M20.9999 12L3 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Why us?" section -->
+        <section class="why-us">
+            <div class="why-us__overlay clip-overlay">
+                <div class="why-us__bg">
+                    <img src="./assets/images/why-us.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="why-us__content heading f-column">
+                    <div class="why-us__label heading__label">
+                        Why us
+                    </div>
+                    <h2 class="why-us__title heading__title">
+                        What makes us different?
+                    </h2>
+                    <p class="why-us__subtitle">
+                        Lorem ipsum dolor sit amet consectetur scelerisque 
+                        lacinia mollis ultrices sapien velnisl at ac sollicitudin est
+                        risus nisl interdum nam enim ac porta eu lacus cum odio
+                        vitae arcu enim tellus platea in ultrices habitant sit
+                        egestas in et massa pellentesque morbi non at dui sed
+                        imperdiet id natoque porttitor eget. Scelerisque
+                        scelerisque elementum amet amet lacinia egestas cum.
+                        risus donec facilisis duis faucibus dui fermentum rutrum
+                        elementum nunc purus quam donec porta suspendisse
+                        viverra mauris orci aliquam sit curabitur sit.
+                    </p>
+                    <button class="btn--primary">
+                        Schelude an appointment
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- "About" section -->
+        <section class="about">
+            <div class="about__overlay clip-overlay">
+                <div class="about__bg">
+                    <img src="./assets/images/about.png" alt="">
+                </div>
+                <div class="about__overlay--short"></div>
+            </div>
+            <div class="container f-row">
+                <div class="about__content heading f-column">
+                    <div class="about__label heading__label">
+                        about us
+                    </div>
+                    <h2 class="about__title heading__title">
+                        The story behind our car workshop
+                    </h2>
+                    <p class="about__subtitle">
+                        At vitae commodo amet libero tortor blandit risus
+                        condimet mauris cras arcu tortor aenean turpis massa
+                        mauris ac mi facilisi cursus aliquam a ac maecenas
+                        purus amet sapien id suspendisse porttitor tempor at
+                        donec massa nibh.
+                    </p>
+                    <button class="btn--secondary">
+                        More about us
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Locations" section -->
+        <section class="locations">
+            <div class="container">
+                <div class="locations__header heading">
+                    <div class="locations__label heading__label">
+                        locations
+                    </div>
+                    <h2 class="locations__title heading__title">
+                        We have a Car workshop near you
+                    </h2>
+                    <p class="locations__subtitle">
+                        Imperdiet tristique non urna iaculis adipiscing tristique 
+                        consequat quam aliquam imperdiet gravida vestibulum eget
+                        amet et id ut.
+                    </p>
+                </div>
+                <div class="locations__places f-row">
+                    <div class="locations-card">
+                        <img class="locations-card__bg" src="./assets/images/locations/locations-1.png" alt="">
+                        <div class="locations-card__content f-column">
+                            <h3 class="locations-card__title">
+                                Woodland Hills, LA
+                            </h3>
+                            <p class="locations-card__subtitle">
+                                Aenean quam sed ornare massa donec nec sit enim in at
+                                suspendisse cras justo elementum proin ac mauris amet
+                                elementum quam pellentesque in neque odio facilisi etiam.
+                            </p>
+                            <div class="locations-card__meta f-row-between">
+                                <span class="locations-card__address">
+                                    987 L Woodland Hills St, Los Angeles, CA, 90012
+                                </span>
+                                <span class="locations-card__number">
+                                    (214) 388-9847
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="locations-card">
+                        <img class="locations-card__bg" src="./assets/images/locations/locations-2.png" alt="">
+                        <div class="locations-card__content f-column">
+                            <h3 class="locations-card__title">
+                                Santa Monica, LA
+                            </h3>
+                            <p class="locations-card__subtitle">
+                                Aenean quam sed ornare massa donec nec sit enim in at
+                                suspendisse cras justo elementum proin ac mauris amet
+                                elementum quam pellentesque in neque odio facilisi etiam.
+                            </p>
+                            <div class="locations-card__meta f-row-between">
+                                <span class="locations-card__address">
+                                    880 N Santa Monica St, Los Angeles, CA, 90012
+                                </span>
+                                <span class="locations-card__number">
+                                    (213) 427-0570
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Reviews" section -->
+        <section class="reviews">
+            <div class="reviews__wide-row f-row-between">
+                <div class="reviews__content heading f-column">
+                    <div class="reviews__label heading__label">
+                        Testimonials
+                    </div>
+                    <h2 class="reviews__title heading__title">
+                        What our clients say about us
+                    </h2>
+                    <p class="reviews__subtitle">
+                        Lorem ipsum dolor sit amet consectetur tellus massa
+                        vulputate nec nislid et sem turpis eleifend fermentum
+                        eget habitant et mauris enim aliquam pharetra non sed
+                        lectus sit adipiscing pulvinar sed risus sed purus diam.
+                    </p>
+                    <button class="btn--primary">
+                        Schelude an appointment
+                    </button>
+                </div>
+                <div class="reviews__slider slider" data-slider="reviews">
+                    <div class="reviews__cards slider__track f-row" data-slider-el="track">
+
+                        <article class="reviews-card slider__slide f-row">
+                            
+                            <img class="reviews-card__bg" 
+                            src="./assets/images/reviews/reviews-1.png" alt="">
+
+                            <div class="reviews-card__content f-column">
+                                <h3 class="reviews-card__title">
+                                    Sophie Moore
+                                </h3>
+                                <p class="reviews-card__location">
+                                    Los Angeles, L.A
+                                </p>
+                                <p class="reviews-card__quote">
+                                    Tortor dictum sed auctor euismod duis pulvinar
+                                    neque pellentesque porttitor lorem venenatis
+                                    nulla dictum posuere in volutpat odio semper
+                                    porttitor leo varius nunc non augue elementum.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="reviews-card slider__slide f-row">
+                            
+                            <img class="reviews-card__bg" 
+                            src="./assets/images/reviews/reviews-2.png" alt="">
+
+                            <div class="reviews-card__content f-column">
+                                <h3 class="reviews-card__title">
+                                    Phil woods
+                                </h3>
+                                <p class="reviews-card__location">
+                                    Los Angeles, L.A
+                                </p>
+                                <p class="reviews-card__quote">
+                                    Tortor dictum sed auctor euismod duis pulvinar
+                                    neque pellentesque porttitor lorem venenatis
+                                    nulla dictum posuere in volutpat odio semper
+                                    porttitor leo varius nunc non augue elementum.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                    <div class="reviews__control f-row-between" data-slider-el="control">
+                        <button class="reviews__btn" data-slider-btn="prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.4609 3.53914L3.00007 12L11.4609 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                                <path d="M3.00009 12L21 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                            </svg>
+                        </button>
+                        <button class="reviews__btn" data-slider-btn="next  ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5391 3.53914L20.9999 12L12.5391 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                                <path d="M20.9999 12L3 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Visit us" section -->
+        <section class="visit-us">
+            <div class="visit-us__overlay clip-overlay">
+                <img class="visit-us__bg" src="./assets/images/visit-us.png" alt="">
+                <div class="visit-us__overlay--short"></div>
+            </div>
+            <div class="container">
+                <div class="visit-us__content heading f-column">
+                    <div class="visit-us__label heading__label">
+                        Visit us
+                    </div>
+                    <h2 class="visit-us__title heading__title">
+                        Get in touch with our team today
+                    </h2>
+                    <p class="visit-us__subtitle">
+                        At vitae commodo amet libero tortor blandit risus condimentum
+                        mauris cras arcu tortor aenean turpis massa color sit amet
+                    </p>
+                    <button class="btn--primary">
+                        Schelude an appointment
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Packages" section -->
+        <section class="packages">
+            <div class="container">
+                <div class="packages__header f-row">
+                    <div class="packages__heading heading">
+                        <div class="packages__label heading__label">
+                            Packages
+                        </div>
+                        <h2 class="packages__title heading__title">
+                            Packages for all types of cars
+                        </h2>
+                    </div>
+                    <div class="packages__desc">
+                        Ultricies tempus urna turpis nunc nec dignissim a lobortis
+                        at egestas. Euismod habitant rhoncus mattis in tortor nunc
+                        elit in viverra sit euismod a tortor facilisi aliquam mauris
+                    </div>
+                </div>
+                <div class="packages__cards f-row">
+
+                    <div class="packages-card f-row">
+
+                        <div class="packages-card__image f-row-center">
+                            <img src="./assets/images/packages/packages-starter.png" alt="">
+                        </div>
+
+                        <div class="packages-card__body">
+                            <div class="packages-card__top f-row-between">
+                                <h3 class="packages-card__title">
+                                    Starter
+                                </h3>
+                                <p class="packages-card__price">
+                                    $99.00 USD
+                                </p>
+                            </div>
+                            <div class="packages-card__bottom f-column">
+                                <p class="packages-card__desc">
+                                    Neque scelerisque volutpat ac turpis risus placerat leo
+                                    consequat odio in purus aenean nisl volutpat consectetur
+                                    in egestas cras nulla nullam.
+                                </p>
+                                <div class="packages-card__included">
+                                    <h4 class="packages-card__included-title">
+                                        What is included:
+                                    </h4>
+
+                                    <ul class="packages-card__included-list f-row">
+                                        <li class="packages-card__included-item f-row">
+                                            Oil change
+                                        </li>
+                                        <li class="packages-card__included-item f-row">
+                                            Engine service
+                                        </li>
+                                        <li class="packages-card__included-item f-row">
+                                            Tune ups
+                                        </li>
+                                        <li class="packages-card__included-item f-row">
+                                            Computer diagnostic
+                                        </li>
+                                        <li class="packages-card__included-item f-row">
+                                            General repairs
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn--primary">
+                                    Get started
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- "Blog" section -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog__header heading">
+                    <p class="blog__label heading__label">
+                        Blog
+                    </p>
+                    <h2 class="blog__title heading__title">
+                        Articles & Resources
+                    </h2>
+                </div>
+                <div class="blog__body f-row-between">
+                    <div class="blog__recent">
+                        <div class="blog-card">
+
+                            <img src="./assets/images/blog.png" alt="" class="blog-card__bg">
+
+                            
+                            <div class="blog-card__body">
+                                <h4 class="blog-card__title">
+                                    What are the best options if i want a used car in 2024?
+                                </h4>
+                                <div class="blog-card__meta">
+                                    <a class="btn--secondary">
+                                        Learn more
+                                    </a>
+                                    <span class="blog-card__date">
+                                        Oct 20, 2024
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__list f-column">
+                        <div class="blog-card">
+                            <h4 class="blog-card__title">
+                                What are the best options if i want a used car in 2024?
+                            </h4>
+                            <div class="blog-card__meta">
+                                <a class="btn--secondary btn--dark">
+                                    Learn more
+                                </a>
+                                <span class="blog-card__date">
+                                    Oct 20, 2024
+                                </span>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <h4 class="blog-card__title">
+                                What are the best options if i want a used car in 2024?
+                            </h4>
+                            <div class="blog-card__meta">
+                                <a class="btn--secondary btn--dark">
+                                    Learn more
+                                </a>
+                                <span class="blog-card__date">
+                                    Oct 20, 2024
+                                </span>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <h4 class="blog-card__title">
+                                What are the best options if i want a used car in 2024?
+                            </h4>
+                            <div class="blog-card__meta">
+                                <a class="btn--secondary btn--dark">
+                                    Learn more
+                                </a>
+                                <span class="blog-card__date">
+                                    Oct 20, 2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top f-row-between">
+                <div class="footer__navigate footer__column">
+                    <h3 class="footer__title">
+                        Navigate
+                    </h3>
+                    <ul class="footer__list f-column">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                About
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Services
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Blog post
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Packages
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Package single
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__pages footer__column">
+                    <h3 class="footer__title">
+                        Pages
+                    </h3>
+                    <ul class="footer__list f-column">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Start here
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Styleguide
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                404 not found
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Password protected
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Licenses
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Changelog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contact footer__column">
+                    <h3 class="footer__title">
+                        Contact
+                    </h3>
+                    <ul class="footer__list f-column">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                (213) 427-0570
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                Info@CarRepair.com
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">
+                                880 N Santa Monica St,
+                                Los Angeles, CA, 90012
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom f-row-between">
+                <a class="default-logo f-row">
+                    <div class="default-logo__img">
+                        <img src="./assets/images/icons/Logo.svg" alt="">
+                    </div>
+                    <span class="default-logo__text">
+                        CAR<span class="text-accent">/</span>REPAIR X
+                    </span>
+                </a>
+                <div class="footer__copyright">
+                    Copyright © CarRepair X | Designed by BRIX Templates
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="./assets/scripts/module.js"></script>
+</body>
+</html>

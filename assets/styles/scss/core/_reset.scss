@@ -1,0 +1,102 @@
+// -- Fonts --
+
+@font-face {
+  font-display: swap;
+  font-family: 'THICCCBOI';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/THICCCBOI-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'THICCBOI';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../fonts/THICCCBOI-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'THICCCBOI';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../fonts/THICCCBOI-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'THICCCBOI';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../fonts/THICCCBOI-Black.woff2') format('woff2');
+}
+
+// -- Reset Styles --
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+ul, ol { 
+    list-style: none; 
+}
+input, textarea, button, select, a {
+    color: inherit;
+    fill: inherit;
+    font: inherit;
+    outline: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+a { 
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// -- Default Styles --
+
+body {  
+    font-family: "THICCCBOI", "Arial", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+    background: var(--bg-first);
+    color: var(--text-first);
+    fill: var(--text-first);
+}
+img, video { 
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+h1 { font-size: 3.6em; }
+h2 { font-size: 3.0em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
+// h5 { font-size: 1.0em; }
+// h6 { font-size: 0.8em; }
+
+@media (max-width: 1100px) {
+    body { font-size: 1.6rem; }
+}
+@media (max-width: 850px) {
+    body { font-size: 1.4rem; }
+}
+@media (max-width: 500px) {
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2.0em; }
+}
