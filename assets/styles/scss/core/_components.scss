@@ -14,40 +14,55 @@
 }
 // Buttons types
 
-.btn--primary {
+.btn-primary {
     width: fit-content;
     padding: 14px 16px;
-    text-transform: uppercase;
-
+    
     background: var(--primary-accent);
     color: var(--neutral-100);
     fill: currentColor;
     
     -webkit-tap-highlight-color: transparent;
+    text-transform: uppercase;
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.4px;
-    transition: color 0.2s;
+    transition: transform 0.3s;
     
-    &:hover { color: var(--neutral-500) }
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+.btn-primary--dark {
+    transition: background 0.3s, transform 0.3s;
+
+    &:hover {
+        background: var(--neutral-800);
+    }
 }
 
-.btn--secondary {
-    @extend .btn--primary;
+
+.btn-secondary {
+    @extend .btn-primary;
 
     background: none;
-    outline: 2px solid currentColor;
+    outline: 2px solid var(--neutral-100);
     outline-offset: -2px;
 
-    transition: color 0.1s, outline 0.1s;
+    transition: color 0.2s, transform 0.3s, background 0.2s;
 
-    &:hover { color: var(--neutral-500); }
-}
-
-.btn--dark {
-    color: var(--neutral-800);
     &:hover {
-        color: var(--neutral-500);
+        background: var(--neutral-100);
+        color: var(--neutral-800);
+    }
+}
+.btn-secondary--dark {
+    color: var(--neutral-800);
+    outline: 2px solid var(--neutral-800);
+
+    &:hover {
+        background: var(--neutral-800);
+        color: var(--neutral-100);
     }
 }
 
@@ -193,6 +208,8 @@
     }
 }
 
+
+// Slider default styles
 .slider {
     position: relative;
     width: 100%;
@@ -209,6 +226,7 @@
         &.is-dragging {
             transition: none;
             user-select: none;
+            -webkit-user-drag: none;
         }
     }
 

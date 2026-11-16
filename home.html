@@ -10,8 +10,9 @@
 </head>
 <body>
     <div id="overlay"></div>
+    <div id="header-sentinel"></div>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="f-row-between container">
             <a class="default-logo f-row">
                 <div class="default-logo__img">
@@ -40,7 +41,7 @@
                 <button class="header__link f-row">
                     CART (3)
                 </button>
-                <button class="header__link btn--primary">
+                <button class="btn-primary">
                     GET STARTED
                 </button>
             </nav>
@@ -77,10 +78,10 @@
                         mauris. cras arcu tortor aenean turpis massa mauris ac mi facilisi.
                     </p>
                     <div class="hero__cta cta">
-                        <button class="btn--primary">
+                        <button class="btn-primary">
                             Schelude an appointment
                         </button>
-                        <button class="btn--secondary">
+                        <button class="btn-secondary">
                             Browse services
                         </button>
                     </div>
@@ -101,10 +102,10 @@
                         </h2>
                     </div>
                     <div class="services__cta cta">
-                        <button class="btn--primary">
+                        <button class="btn-primary btn-primary--dark">
                             Schelude an appointment
                         </button>
-                        <button class="btn--secondary btn--dark">
+                        <button class="btn-secondary btn-secondary--dark">
                             Browse services
                         </button>
                     </div>
@@ -130,7 +131,7 @@
                                         ac risus pellentesque id morbi rhoncus
                                         eu duis.
                                     </div>
-                                    <button class="s-card__more btn--secondary">
+                                    <button class="s-card__more btn-secondary">
                                         Learn more
                                     </button>
                                 </div>
@@ -154,14 +155,14 @@
                                         ac risus pellentesque id morbi rhoncus
                                         eu duis.
                                     </div>
-                                    <button class="s-card__more btn--secondary">
+                                    <button class="s-card__more btn-secondary">
                                         Learn more
                                     </button>
                                 </div>
                             </div>
                         </article>
                         <article class="s-card slider__slide">
-                            <img class="s-card__bg" src="./assets/images/services/service-2.png" alt="">
+                            <img class="s-card__bg" src="./assets/images/services/service-3.png" alt="">
                             <div class="s-card__content f-column-between">
                                 <div class="s-card__top">
                                     <span class="s-card__number">
@@ -170,7 +171,7 @@
                                 </div>
                                 <div class="s-card__bottom f-column">
                                     <h3 class="s-card__title">
-                                        Tires
+                                        Alignment
                                     </h3>
                                     <div class="s-card__subttitle">
                                         Lacus malesuada consequat sed duis nunc tellus
@@ -178,7 +179,79 @@
                                         ac risus pellentesque id morbi rhoncus
                                         eu duis.
                                     </div>
-                                    <button class="s-card__more btn--secondary">
+                                    <button class="s-card__more btn-secondary">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="s-card slider__slide">
+                            <img class="s-card__bg" src="./assets/images/services/service-4.png" alt="">
+                            <div class="s-card__content f-column-between">
+                                <div class="s-card__top">
+                                    <span class="s-card__number">
+                                        04
+                                    </span>
+                                </div>
+                                <div class="s-card__bottom f-column">
+                                    <h3 class="s-card__title">
+                                        Powder coating
+                                    </h3>
+                                    <div class="s-card__subttitle">
+                                        Lacus malesuada consequat sed duis nunc tellus
+                                        tincidunt tellus viverra fermentum vitae sit
+                                        ac risus pellentesque id morbi rhoncus
+                                        eu duis.
+                                    </div>
+                                    <button class="s-card__more btn-secondary">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="s-card slider__slide">
+                            <img class="s-card__bg" src="./assets/images/services/service-5.png" alt="">
+                            <div class="s-card__content f-column-between">
+                                <div class="s-card__top">
+                                    <span class="s-card__number">
+                                        05
+                                    </span>
+                                </div>
+                                <div class="s-card__bottom f-column">
+                                    <h3 class="s-card__title">
+                                        Brakes
+                                    </h3>
+                                    <div class="s-card__subttitle">
+                                        Lacus malesuada consequat sed duis nunc tellus
+                                        tincidunt tellus viverra fermentum vitae sit
+                                        ac risus pellentesque id morbi rhoncus
+                                        eu duis.
+                                    </div>
+                                    <button class="s-card__more btn-secondary">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="s-card slider__slide">
+                            <img class="s-card__bg" src="./assets/images/services/service-6.png" alt="">
+                            <div class="s-card__content f-column-between">
+                                <div class="s-card__top">
+                                    <span class="s-card__number">
+                                        06
+                                    </span>
+                                </div>
+                                <div class="s-card__bottom f-column">
+                                    <h3 class="s-card__title">
+                                        Engine service
+                                    </h3>
+                                    <div class="s-card__subttitle">
+                                        Lacus malesuada consequat sed duis nunc tellus
+                                        tincidunt tellus viverra fermentum vitae sit
+                                        ac risus pellentesque id morbi rhoncus
+                                        eu duis.
+                                    </div>
+                                    <button class="s-card__more btn-secondary">
                                         Learn more
                                     </button>
                                 </div>
@@ -189,14 +262,14 @@
                     <div class="services__control slider__control f-row-between" data-slider-el="control">
                         <button class="services__btn" data-slider-btn="prev">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M11.4609 3.53914L3.00007 12L11.4609 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-                                <path d="M3.00009 12L21 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                                <path stroke="currentColor" d="M11.4609 3.53914L3.00007 12L11.4609 20.4609" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path stroke="currentColor" d="M3.00009 12L21 12" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
                         <button class="services__btn" data-slider-btn="next">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.5391 3.53914L20.9999 12L12.5391 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-                                <path d="M20.9999 12L3 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path stroke="currentColor" d="M12.5391 3.53914L20.9999 12L12.5391 20.4609" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path stroke="currentColor" d="M20.9999 12L3 12" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
                     </div>
@@ -231,7 +304,7 @@
                         elementum nunc purus quam donec porta suspendisse
                         viverra mauris orci aliquam sit curabitur sit.
                     </p>
-                    <button class="btn--primary">
+                    <button class="btn-primary btn-primary--dark">
                         Schelude an appointment
                     </button>
                 </div>
@@ -261,7 +334,7 @@
                         purus amet sapien id suspendisse porttitor tempor at
                         donec massa nibh.
                     </p>
-                    <button class="btn--secondary">
+                    <button class="btn-secondary">
                         More about us
                     </button>
                 </div>
@@ -284,47 +357,71 @@
                         amet et id ut.
                     </p>
                 </div>
-                <div class="locations__places f-row">
-                    <div class="locations-card">
-                        <img class="locations-card__bg" src="./assets/images/locations/locations-1.png" alt="">
-                        <div class="locations-card__content f-column">
-                            <h3 class="locations-card__title">
-                                Woodland Hills, LA
-                            </h3>
-                            <p class="locations-card__subtitle">
-                                Aenean quam sed ornare massa donec nec sit enim in at
-                                suspendisse cras justo elementum proin ac mauris amet
-                                elementum quam pellentesque in neque odio facilisi etiam.
-                            </p>
-                            <div class="locations-card__meta f-row-between">
-                                <span class="locations-card__address">
+            </div>
+            <div class="locations__places f-row">
+                <div class="card f-row">
+                    <img class="card__bg" src="./assets/images/locations/locations-1.png" alt="">
+                    <div class="card__body f-column">
+                        <h3 class="card__title">
+                            Woodland Hills, LA
+                        </h3>
+                        <p class="card__subtitle">
+                            Aenean quam sed ornare massa donec nec sit enim in at
+                            suspendisse cras justo elementum proin ac mauris amet
+                            elementum quam pellentesque in neque odio facilisi etiam.
+                        </p>
+                        <div class="card__meta f-row">
+                            <a href="#" class="card__field f-row">
+                                <span class="card__field-text">
                                     987 L Woodland Hills St, Los Angeles, CA, 90012
                                 </span>
-                                <span class="locations-card__number">
+                                <svg class="card__field-svg" viewBox="0 0 24 24" fill="none">
+                                    <path stroke="currentColor" d="M4.00001 20L19.481 4.43478" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20 19.0848V3.99999H4.91515" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="card__field f-row">
+                                <span class="card__field-text">
                                     (214) 388-9847
                                 </span>
-                            </div>
+                                <svg class="card__field-svg" viewBox="0 0 24 24" fill="none">
+                                    <path stroke="currentColor" d="M4.00001 20L19.481 4.43478" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20 19.0848V3.99999H4.91515" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <div class="locations-card">
-                        <img class="locations-card__bg" src="./assets/images/locations/locations-2.png" alt="">
-                        <div class="locations-card__content f-column">
-                            <h3 class="locations-card__title">
-                                Santa Monica, LA
-                            </h3>
-                            <p class="locations-card__subtitle">
-                                Aenean quam sed ornare massa donec nec sit enim in at
-                                suspendisse cras justo elementum proin ac mauris amet
-                                elementum quam pellentesque in neque odio facilisi etiam.
-                            </p>
-                            <div class="locations-card__meta f-row-between">
-                                <span class="locations-card__address">
+                </div>
+                <div class="card f-row">
+                    <img class="card__bg" src="./assets/images/locations/locations-2.png" alt="">
+                    <div class="card__body f-column">
+                        <h3 class="card__title">
+                            Santa Monica, LA
+                        </h3>
+                        <p class="card__subtitle">
+                            Aenean quam sed ornare massa donec nec sit enim in at
+                            suspendisse cras justo elementum proin ac mauris amet
+                            elementum quam pellentesque in neque odio facilisi etiam.
+                        </p>
+                        <div class="card__meta f-row">
+                            <a href="#" class="card__field f-row">
+                                <span class="card__field-text">
                                     880 N Santa Monica St, Los Angeles, CA, 90012
                                 </span>
-                                <span class="locations-card__number">
+                                <svg class="card__field-svg" viewBox="0 0 24 24" fill="none">
+                                    <path stroke="currentColor" d="M4.00001 20L19.481 4.43478" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20 19.0848V3.99999H4.91515" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="card__field f-row">
+                                <span class="card__field-text">
                                     (213) 427-0570
                                 </span>
-                            </div>
+                                <svg class="card__field-svg" viewBox="0 0 24 24" fill="none">
+                                    <path stroke="currentColor" d="M4.00001 20L19.481 4.43478" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20 19.0848V3.99999H4.91515" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -347,7 +444,7 @@
                         eget habitant et mauris enim aliquam pharetra non sed
                         lectus sit adipiscing pulvinar sed risus sed purus diam.
                     </p>
-                    <button class="btn--primary">
+                    <button class="btn-primary btn-primary--dark">
                         Schelude an appointment
                     </button>
                 </div>
@@ -357,7 +454,8 @@
                         <article class="reviews-card slider__slide f-row">
                             
                             <img class="reviews-card__bg" 
-                            src="./assets/images/reviews/reviews-1.png" alt="">
+                            src="./assets/images/reviews/reviews-1.png" loading="lazy" 
+                            alt="review 1">
 
                             <div class="reviews-card__content f-column">
                                 <h3 class="reviews-card__title">
@@ -377,7 +475,92 @@
                         <article class="reviews-card slider__slide f-row">
                             
                             <img class="reviews-card__bg" 
-                            src="./assets/images/reviews/reviews-2.png" alt="">
+                            src="./assets/images/reviews/reviews-2.png" loading="lazy" 
+                            alt="review 2">
+
+                            <div class="reviews-card__content f-column">
+                                <h3 class="reviews-card__title">
+                                    Phil woods
+                                </h3>
+                                <p class="reviews-card__location">
+                                    Los Angeles, L.A
+                                </p>
+                                <p class="reviews-card__quote">
+                                    Tortor dictum sed auctor euismod duis pulvinar
+                                    neque pellentesque porttitor lorem venenatis
+                                    nulla dictum posuere in volutpat odio semper
+                                    porttitor leo varius nunc non augue elementum.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="reviews-card slider__slide f-row">
+                            
+                            <img class="reviews-card__bg" 
+                            src="./assets/images/reviews/reviews-1.png" loading="lazy" 
+                            alt="review 3">
+
+                            <div class="reviews-card__content f-column">
+                                <h3 class="reviews-card__title">
+                                    Sophie Moore
+                                </h3>
+                                <p class="reviews-card__location">
+                                    Los Angeles, L.A
+                                </p>
+                                <p class="reviews-card__quote">
+                                    Tortor dictum sed auctor euismod duis pulvinar
+                                    neque pellentesque porttitor lorem venenatis
+                                    nulla dictum posuere in volutpat odio semper
+                                    porttitor leo varius nunc non augue elementum.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="reviews-card slider__slide f-row">
+                            
+                            <img class="reviews-card__bg" 
+                            src="./assets/images/reviews/reviews-2.png" loading="lazy" 
+                            alt="review 4">
+
+                            <div class="reviews-card__content f-column">
+                                <h3 class="reviews-card__title">
+                                    Phil woods
+                                </h3>
+                                <p class="reviews-card__location">
+                                    Los Angeles, L.A
+                                </p>
+                                <p class="reviews-card__quote">
+                                    Tortor dictum sed auctor euismod duis pulvinar
+                                    neque pellentesque porttitor lorem venenatis
+                                    nulla dictum posuere in volutpat odio semper
+                                    porttitor leo varius nunc non augue elementum.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="reviews-card slider__slide f-row">
+                            
+                            <img class="reviews-card__bg" 
+                            src="./assets/images/reviews/reviews-1.png" loading="lazy" 
+                            alt="review 6">
+
+                            <div class="reviews-card__content f-column">
+                                <h3 class="reviews-card__title">
+                                    Sophie Moore
+                                </h3>
+                                <p class="reviews-card__location">
+                                    Los Angeles, L.A
+                                </p>
+                                <p class="reviews-card__quote">
+                                    Tortor dictum sed auctor euismod duis pulvinar
+                                    neque pellentesque porttitor lorem venenatis
+                                    nulla dictum posuere in volutpat odio semper
+                                    porttitor leo varius nunc non augue elementum.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="reviews-card slider__slide f-row">
+                            
+                            <img class="reviews-card__bg" 
+                            src="./assets/images/reviews/reviews-2.png" loading="lazy" 
+                            alt="review 7">
 
                             <div class="reviews-card__content f-column">
                                 <h3 class="reviews-card__title">
@@ -403,8 +586,8 @@
                                 <path d="M3.00009 12L21 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
                             </svg>
                         </button>
-                        <button class="reviews__btn" data-slider-btn="next  ">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="reviews__btn" data-slider-btn="next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12.5391 3.53914L20.9999 12L12.5391 20.4609" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
                                 <path d="M20.9999 12L3 12" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
                             </svg>
@@ -432,7 +615,7 @@
                         At vitae commodo amet libero tortor blandit risus condimentum
                         mauris cras arcu tortor aenean turpis massa color sit amet
                     </p>
-                    <button class="btn--primary">
+                    <button class="btn-primary">
                         Schelude an appointment
                     </button>
                 </div>
@@ -459,51 +642,51 @@
                 </div>
                 <div class="packages__cards f-row">
 
-                    <div class="packages-card f-row">
+                    <div class="card f-row">
 
-                        <div class="packages-card__image f-row-center">
+                        <div class="card__image f-row-center">
                             <img src="./assets/images/packages/packages-starter.png" alt="">
                         </div>
 
-                        <div class="packages-card__body">
-                            <div class="packages-card__top f-row-between">
-                                <h3 class="packages-card__title">
+                        <div class="card__body">
+                            <div class="card__top f-row-between">
+                                <h3 class="card__title">
                                     Starter
                                 </h3>
-                                <p class="packages-card__price">
+                                <h3 class="card__price">
                                     $99.00 USD
-                                </p>
+                                </h3>
                             </div>
-                            <div class="packages-card__bottom f-column">
-                                <p class="packages-card__desc">
+                            <div class="card__bottom f-column">
+                                <p class="card__desc">
                                     Neque scelerisque volutpat ac turpis risus placerat leo
                                     consequat odio in purus aenean nisl volutpat consectetur
                                     in egestas cras nulla nullam.
                                 </p>
-                                <div class="packages-card__included">
-                                    <h4 class="packages-card__included-title">
+                                <div class="card__included">
+                                    <h4 class="card__included-title">
                                         What is included:
                                     </h4>
 
-                                    <ul class="packages-card__included-list f-row">
-                                        <li class="packages-card__included-item f-row">
+                                    <ul class="card__included-list f-row">
+                                        <li class="card__included-item f-row">
                                             Oil change
                                         </li>
-                                        <li class="packages-card__included-item f-row">
+                                        <li class="card__included-item f-row">
                                             Engine service
                                         </li>
-                                        <li class="packages-card__included-item f-row">
+                                        <li class="card__included-item f-row">
                                             Tune ups
                                         </li>
-                                        <li class="packages-card__included-item f-row">
+                                        <li class="card__included-item f-row">
                                             Computer diagnostic
                                         </li>
-                                        <li class="packages-card__included-item f-row">
+                                        <li class="card__included-item f-row">
                                             General repairs
                                         </li>
                                     </ul>
                                 </div>
-                                <button class="btn--primary">
+                                <button class="btn-primary">
                                     Get started
                                 </button>
                             </div>
@@ -526,69 +709,86 @@
                         Articles & Resources
                     </h2>
                 </div>
-                <div class="blog__body f-row-between">
-                    <div class="blog__recent">
-                        <div class="blog-card">
+                <div class="blog__body">
+                    <a class="card">
 
-                            <img src="./assets/images/blog.png" alt="" class="blog-card__bg">
+                        <img class="card__bg" src="./assets/images/blog.png">
 
-                            
-                            <div class="blog-card__body">
-                                <h4 class="blog-card__title">
-                                    What are the best options if i want a used car in 2024?
+                        <div class="card__body f-column-between">
+                            <div class="card__top">
+                                <div class="card__more">
+                                    <svg class="card__field-svg" viewBox="0 0 24 24" fill="none">
+                                        <path stroke="currentColor" d="M4.00001 20L19.481 4.43478" stroke-width="2" stroke-linecap="square"/>
+                                        <path stroke="currentColor" d="M20 19.0848V3.99999H4.91515" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <h4 class="card__title">
+                                What are the best options if i want a used car in 2024?
                                 </h4>
-                                <div class="blog-card__meta">
-                                    <a class="btn--secondary">
+                                <div class="card__meta">
+                                    <button class="card__btn btn-secondary">
                                         Learn more
-                                    </a>
-                                    <span class="blog-card__date">
+                                    </button>
+                                    <span class="card__date">
                                         Oct 20, 2024
                                     </span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="blog__list f-column">
-                        <div class="blog-card">
-                            <h4 class="blog-card__title">
-                                What are the best options if i want a used car in 2024?
-                            </h4>
-                            <div class="blog-card__meta">
-                                <a class="btn--secondary btn--dark">
-                                    Learn more
-                                </a>
-                                <span class="blog-card__date">
-                                    Oct 20, 2024
-                                </span>
-                            </div>
+                    </a>
+                    <a class="card">
+                        <h4 class="card__title">
+                            What are the best options if i want a used car in 2024?
+                        </h4>
+                        <div class="card__meta">
+                            <button class="card__btn btn-primary">
+                                Read more
+                                <svg class="card__btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                    <path stroke="currentColor" d="M12.5391 3.53912L20.9999 12L12.5391 20.4609" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20.2989 12L3 12" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </button>
+                            <span class="card__date">
+                                Oct 20, 2024
+                            </span>
                         </div>
-                        <div class="blog-card">
-                            <h4 class="blog-card__title">
-                                What are the best options if i want a used car in 2024?
-                            </h4>
-                            <div class="blog-card__meta">
-                                <a class="btn--secondary btn--dark">
-                                    Learn more
-                                </a>
-                                <span class="blog-card__date">
-                                    Oct 20, 2024
-                                </span>
-                            </div>
+                    </a>
+                    <a class="card">
+                        <h4 class="card__title">
+                            What are the best options if i want a used car in 2024?
+                        </h4>
+                        <div class="card__meta">
+                            <button class="card__btn btn-primary">
+                                Read more
+                                <svg class="card__btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                    <path stroke="currentColor" d="M12.5391 3.53912L20.9999 12L12.5391 20.4609" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20.2989 12L3 12" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </button>
+                            <span class="card__date">
+                                Oct 20, 2024
+                            </span>
                         </div>
-                        <div class="blog-card">
-                            <h4 class="blog-card__title">
-                                What are the best options if i want a used car in 2024?
-                            </h4>
-                            <div class="blog-card__meta">
-                                <a class="btn--secondary btn--dark">
-                                    Learn more
-                                </a>
-                                <span class="blog-card__date">
-                                    Oct 20, 2024
-                                </span>
-                            </div>
+                    </a>
+                    <a class="card">
+                        <h4 class="card__title">
+                            What are the best options if i want a used car in 2024?
+                        </h4>
+                        <div class="card__meta">
+                            <button class="card__btn btn-primary">
+                                Read more
+                                <svg class="card__btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                    <path stroke="currentColor" d="M12.5391 3.53912L20.9999 12L12.5391 20.4609" stroke-width="2" stroke-linecap="square"/>
+                                    <path stroke="currentColor" d="M20.2989 12L3 12" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            </button>
+                            <span class="card__date">
+                                Oct 20, 2024
+                            </span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -715,12 +915,17 @@
                     </span>
                 </a>
                 <div class="footer__copyright">
-                    Copyright © CarRepair X | Designed by BRIX Templates
+                    Copyright © CarRepair X | Designed by 
+                    <a class="footer__design" href="https://www.figma.com/community/file/1676717170018974345/carrepair-x-car-repair-free-figma-template" 
+                    target="_blank" rel="noopener noreferrer">
+                        BRIX Templates
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
     
     <script type="module" src="./assets/scripts/module.js"></script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

@@ -89,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -232,42 +232,60 @@ h4 {
   }
 }
 
-.btn--primary, .btn--secondary {
+.btn-primary, .btn-secondary {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 14px 16px;
-  text-transform: uppercase;
   background: var(--primary-accent);
   color: var(--neutral-100);
   fill: currentColor;
   -webkit-tap-highlight-color: transparent;
+  text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.4px;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.btn--primary:hover, .btn--secondary:hover {
-  color: var(--neutral-500);
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
-.btn--secondary {
+.btn-primary--dark {
+  -webkit-transition: background 0.3s, -webkit-transform 0.3s;
+  transition: background 0.3s, -webkit-transform 0.3s;
+  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.btn-primary--dark:hover {
+  background: var(--neutral-800);
+}
+
+.btn-secondary {
   background: none;
-  outline: 2px solid currentColor;
+  outline: 2px solid var(--neutral-100);
   outline-offset: -2px;
-  -webkit-transition: color 0.1s, outline 0.1s;
-  transition: color 0.1s, outline 0.1s;
+  -webkit-transition: color 0.2s, background 0.2s, -webkit-transform 0.3s;
+  transition: color 0.2s, background 0.2s, -webkit-transform 0.3s;
+  transition: color 0.2s, transform 0.3s, background 0.2s;
+  transition: color 0.2s, transform 0.3s, background 0.2s, -webkit-transform 0.3s;
 }
-.btn--secondary:hover {
-  color: var(--neutral-500);
-}
-
-.btn--dark {
+.btn-secondary:hover {
+  background: var(--neutral-100);
   color: var(--neutral-800);
 }
-.btn--dark:hover {
-  color: var(--neutral-500);
+
+.btn-secondary--dark {
+  color: var(--neutral-800);
+  outline: 2px solid var(--neutral-800);
+}
+.btn-secondary--dark:hover {
+  background: var(--neutral-800);
+  color: var(--neutral-100);
 }
 
 .input--primary {
@@ -451,6 +469,7 @@ h4 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-user-drag: none;
 }
 .slider__slide {
   -ms-flex-negative: 0;
